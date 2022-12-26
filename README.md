@@ -4,6 +4,7 @@ The objective is to extract moving objects from a video. The video is encoded as
 
 In other words, we have **M = u×vT + N**. It is thus possible to **recover the background (and hence the moving objects) by finding a closest rank one matrix x×yT to the data matrix M**, as follows : 
 
+![Loss Function](images/loss_function.jpg)
 
 The goal is to solve this optimization problem and find the solutions x and y. To do so, we will use **stochastic gradient descent** with the following update rule : 
 (see update rule from correction) 
